@@ -1,128 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- load css -->
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/utilities.css">
-		<link rel="stylesheet" href="../css/main.css">
-		<!-- load js -->
-		<script src="../js/main.js" defer></script>
-		<!-- load favicon -->
-		<link rel="shortcut icon" type="image/png" href="../media/favicon.png">
-		<title>Core 2 Interaction: Agenda</title>
-	</head>
 
-	<body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- load css -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/utilities.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- load js -->
+	<script src="js/main.js" defer></script>
+	<!-- load favicon -->
+	<link rel="shortcut icon" type="image/png" href="media/favicon.png">
+	<title>Core 2 Interaction: Agenda</title>
+</head>
 
-		<header>
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="projects.html">Projects</a>
-					</li>
-					<li>
-						<a href="studio.html">Studio</a>
-					</li>
-					<li>
-						<a href="lab.html">Lab</a>
-					</li>
-					<li>
-						<a href="students.html">Students</a>
-					</li>
-					<li>
-						<a href="resources.html">Resources</a>
-					</li>
-					<li>
-						<a href="info.html">Info</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-				
-		<main>
+<body>
 
-			<details>
-				<summary><h1>Week 1</h1><span>Jan 26</span></summary>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="projects.html">Projects</a>
+				</li>
+				<li>
+					<a href="studio.html">Studio</a>
+				</li>
+				<li>
+					<a href="lab.html">Lab</a>
+				</li>
+				<li>
+					<a href="students.html">Students</a>
+				</li>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="info.html">Info</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-				<h3>Agenda</h3>
-				
-				<ol>
-					<li>Introductions</li>
-					<li>📝 Lecture: <a href="https://core-interaction.github.io/lab/html/" target="_blank">Intro to HTML</a></li>
-					<li>An introduction to <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome Developer Tools</a></li>
-				</ol>
+	<main>
 
+		<details>
+			<summary>
+				<h1>Week 1</h1><span>Jan 26</span>
+			</summary>
 
-				<h3>Introduction</h3>
-				<p>Anything that you have an accumulation of can be a collection. An archive is a collection of historical documents or records. Not all collections are archives, but many become relevant with time. For our next project you’re tasked with creating a collection of 25 to 50 items. Any time you see a multiplicity of an object, you begin to notice similarities and contexts in a new way. Seeing multiple of an object allows for this kind of in depth research that observing one object does not. The way the object is documented (consider the various image making techniques we’ve explored this semester) and organized helps direct the viewer on how the object is meant to be experienced.</p>
+			<h3>Agenda</h3>
 
-				<h3>Project</h3>
-				<p>Create a collection of 25 to 50 items. Your collection should have at least five different data types affiliated with it, and should be as specific as possible. There should be a visual consistency between the items, and should have a cohesive story to it. For example: If your collection is “Dogs in Central Park” you might include: photos of the dogs that you take on an iphone, the dog’s name, the dog’s breed, the GPS coordinates of where you saw the dog, and a brief description of the encounter. Once you collect your data, you will organize it into a local database and create a JSON file that houses all the relevant content. </p>
-				<br>
-				<p>Once you have your data collected and collection organized, you’ll design a webpage that houses the collection. Link the JSON file and pull the data in programmatically to display your content. Consider how the collection is organized and experienced — one at a time, in a grid, on separate pages? Consider if there are groupings within your collection and how the relationship between typography and mixed media can add a visual perspective to your work.</p>
-
-				<h3>📚 Assignment</h3>
-				<p class="t-b-1">Questionnaire</p>
-				<ol>
-					<li>Describe your previous experiences with coding. What classes have you already taken where you were exposed to HTML/CSS/JS? What parts of the class resonated with you? What parts were most confusing?</li>
-					<li>How excited about learning code are you? Are you nervous about learning code? If so, why? What can I do in this class to help reduce this anxiety?</li>
-					<li>How do you imagine coding fitting in with the rest of your design curriculum and career after college?</li>
-					<li>What text editor do you prefer to use?</li>
-					<li>Have you used GitHub before? Do you know what it is? Describe your understanding of GitHub.</li>
-					<li>Describe the relationship between HTML, CSS and JavaScript. Try using a unique analogy to describe this relationship. “Bonus points” for creative analogies.</li>
-					<li>Using each HTML heading tag, list your favorite foods ranked by importance (remember, there are six levels of heading tags, `h1` through `h6`).</li>
-					<li>Create an unordered list ( `ul` ) and link to some of your favorite graphic design or development related websites. Include a paragraph ( `p` ) on each site describing why it is important to you.</li>
-					<li>Insert an image (`img`) that brings you joy to the page. Make sure the image includes `alt text` that describes the image.</li>
-					<li>Insert a video embed into the page (for example, a YouTube or Vimeo embed tag of a video of your choosing). You have a few ways you can approach this:
-						<ul>
-							<li>Look into the `iframe` tag. Hint: If using a YouTube or Vimeo video, you can copy the embed code from each video’s page.</li>
-							<li>Use a `video` tag, though finding the URL of a video can sometimes be tricky – do you best to download, place it in your project folder, then reference its file path</li>
-						</ul>
-					</li>
-					<li>Nest the following series of HTML tags inside each other, where each → represents a new level. Make sure to maintain proper indentation.
-						<ul>
-							<li>`main` → `section` → `div` → `p` → `span`</li>
-							<li>No need to fill these tags with any actual content</li>
-						</ul>
-					</li>
-					<li>Create an ordered list of the top 5 countries you’d like to visit. Within each country, create another ordered list of the top cities you’d like to visit in that country. Maintain proper indentation and make sure you nest your ordered lists properly.</li>
-					<li>Use `pre` tags to create a simple [concrete poetry](https://en.wikipedia.org/wiki/Concrete_poetry) version of a Haiku or other poem you write. The poem should represent how you feel at this moment.
-						<ul>
-							<li>Hint: `pre` tags respect whitespace, you can add add lots of spaces and line breaks and they will show up like that when you view the web page.</li>
-						</ul>	
-					</li>
-					<li>Write an HTML comment that is hidden from the browser, but displays in the code.</li>
-					<li>Create an unordered list of at least 6 musical artists you like to listen to. Add a class to each list item that matches the genre of music of that artist.</li>
-					<li>Describe the difference between block, inline-block and inline elements.</li>
-					<li>Use CSS to style the musical genre classes you added in question 9. Give each genre a color and personality using CSS.</li>
-					<li>Use any CSS knowledge you currently have to style your questionnaire in a unique way. Make sure to update the font to something other than the default (use the font-family css property).</li>
-					<li>In a `script` tag, use the console.log function to write a message to the console (Cmd+Opt+U). Tell me something interesting about yourself.</li>
-					<li>Add a `button` to your HTML file and make it do something when clicked using JavaScript</li>
-				</ol>
-
-			</details>
+			<ol>
+				<li>Introductions</li>
+				<li>📝 Lecture: <a href="https://core-interaction.github.io/lab/html/" target="_blank">Intro to HTML</a></li>
+				<li>An introduction to <a href="https://developer.chrome.com/docs/devtools/" target="_blank">Chrome Developer
+						Tools</a></li>
+			</ol>
 
 
-			<details>
-				<summary><h1>Week 2</h1><span>Feb 2</span></summary>
+			<h3>Introduction</h3>
+			<p>Anything that you have an accumulation of can be a collection. An archive is a collection of historical
+				documents or records. Not all collections are archives, but many become relevant with time. For our next project
+				you’re tasked with creating a collection of 25 to 50 items. Any time you see a multiplicity of an object, you
+				begin to notice similarities and contexts in a new way. Seeing multiple of an object allows for this kind of in
+				depth research that observing one object does not. The way the object is documented (consider the various image
+				making techniques we’ve explored this semester) and organized helps direct the viewer on how the object is meant
+				to be experienced.</p>
 
-				<h3>Agenda</h3>
-				
-				<ol>
-					
-				</ol>
+			<h3>Project</h3>
+			<p>Create a collection of 25 to 50 items. Your collection should have at least five different data types
+				affiliated with it, and should be as specific as possible. There should be a visual consistency between the
+				items, and should have a cohesive story to it. For example: If your collection is “Dogs in Central Park” you
+				might include: photos of the dogs that you take on an iphone, the dog’s name, the dog’s breed, the GPS
+				coordinates of where you saw the dog, and a brief description of the encounter. Once you collect your data, you
+				will organize it into a local database and create a JSON file that houses all the relevant content. </p>
+			<br>
+			<p>Once you have your data collected and collection organized, you’ll design a webpage that houses the collection.
+				Link the JSON file and pull the data in programmatically to display your content. Consider how the collection is
+				organized and experienced — one at a time, in a grid, on separate pages? Consider if there are groupings within
+				your collection and how the relationship between typography and mixed media can add a visual perspective to your
+				work.</p>
 
-			</details>
+			<h3>📚 Assignment</h3>
+			<p class="t-b-1">Questionnaire</p>
+			<ol>
+				<li>Describe your previous experiences with coding. What classes have you already taken where you were exposed
+					to HTML/CSS/JS? What parts of the class resonated with you? What parts were most confusing?</li>
+				<li>How excited about learning code are you? Are you nervous about learning code? If so, why? What can I do in
+					this class to help reduce this anxiety?</li>
+				<li>How do you imagine coding fitting in with the rest of your design curriculum and career after college?</li>
+				<li>What text editor do you prefer to use?</li>
+				<li>Have you used GitHub before? Do you know what it is? Describe your understanding of GitHub.</li>
+				<li>Describe the relationship between HTML, CSS and JavaScript. Try using a unique analogy to describe this
+					relationship. “Bonus points” for creative analogies.</li>
+				<li>Using each HTML heading tag, list your favorite foods ranked by importance (remember, there are six levels
+					of heading tags, `h1` through `h6`).</li>
+				<li>Create an unordered list ( `ul` ) and link to some of your favorite graphic design or development related
+					websites. Include a paragraph ( `p` ) on each site describing why it is important to you.</li>
+				<li>Insert an image (`img`) that brings you joy to the page. Make sure the image includes `alt text` that
+					describes the image.</li>
+				<li>Insert a video embed into the page (for example, a YouTube or Vimeo embed tag of a video of your choosing).
+					You have a few ways you can approach this:
+					<ul>
+						<li>Look into the `iframe` tag. Hint: If using a YouTube or Vimeo video, you can copy the embed code from
+							each video’s page.</li>
+						<li>Use a `video` tag, though finding the URL of a video can sometimes be tricky – do you best to download,
+							place it in your project folder, then reference its file path</li>
+					</ul>
+				</li>
+				<li>Nest the following series of HTML tags inside each other, where each → represents a new level. Make sure to
+					maintain proper indentation.
+					<ul>
+						<li>`main` → `section` → `div` → `p` → `span`</li>
+						<li>No need to fill these tags with any actual content</li>
+					</ul>
+				</li>
+				<li>Create an ordered list of the top 5 countries you’d like to visit. Within each country, create another
+					ordered list of the top cities you’d like to visit in that country. Maintain proper indentation and make sure
+					you nest your ordered lists properly.</li>
+				<li>Use `pre` tags to create a simple [concrete poetry](https://en.wikipedia.org/wiki/Concrete_poetry) version
+					of a Haiku or other poem you write. The poem should represent how you feel at this moment.
+					<ul>
+						<li>Hint: `pre` tags respect whitespace, you can add add lots of spaces and line breaks and they will show
+							up like that when you view the web page.</li>
+					</ul>
+				</li>
+				<li>Write an HTML comment that is hidden from the browser, but displays in the code.</li>
+				<li>Create an unordered list of at least 6 musical artists you like to listen to. Add a class to each list item
+					that matches the genre of music of that artist.</li>
+				<li>Describe the difference between block, inline-block and inline elements.</li>
+				<li>Use CSS to style the musical genre classes you added in question 9. Give each genre a color and personality
+					using CSS.</li>
+				<li>Use any CSS knowledge you currently have to style your questionnaire in a unique way. Make sure to update
+					the font to something other than the default (use the font-family css property).</li>
+				<li>In a `script` tag, use the console.log function to write a message to the console (Cmd+Opt+U). Tell me
+					something interesting about yourself.</li>
+				<li>Add a `button` to your HTML file and make it do something when clicked using JavaScript</li>
+			</ol>
+
+		</details>
 
 
-		</main>
+		<details>
+			<summary>
+				<h1>Week 2</h1><span>Feb 2</span>
+			</summary>
 
-	</body>
+			<h3>Agenda</h3>
+
+			<ol>
+
+			</ol>
+
+		</details>
+
+
+	</main>
+
+</body>
+
 </html>
-
-
