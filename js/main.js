@@ -7,17 +7,12 @@ document.addEventListener('resize', () => {
 	pageHeight = innerHeight;
 })
 
-const path = location.pathname.replace("/","");
+const path = location.pathname;
 
 // LINK HANDLING
-const navLinks = document.querySelectorAll('header a');
-navLinks.forEach(link => {
-	if (path == '' && link.pathname == '/index.html' || link.pathname == '/') {
-		link.classList.add('is-active');
-	} else if (path != '' && link.pathname.includes(path)) {
-		link.classList.add('is-active');
-	};
-});
+const navLinks = [...document.querySelectorAll('header a')];
+const activeLink = navLinks.find((el) => el.pathname == path);
+activeLink.classList.add('is-active');
 
 // CUBE
 const cube = document.getElementById('cube');
