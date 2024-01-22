@@ -12,9 +12,12 @@ const path = location.pathname.replace("/","");
 // LINK HANDLING
 const navLinks = document.querySelectorAll('header a');
 navLinks.forEach(link => {
-	if (link.href.includes(path)) link.classList.add('is-active');
-})
-
+	if (path == '' && link.pathname == '/index.html' || link.pathname == '/') {
+		link.classList.add('is-active');
+	} else if (path != '' && link.pathname.includes(path)) {
+		link.classList.add('is-active');
+	};
+});
 
 // CUBE
 const cube = document.getElementById('cube');
