@@ -19,7 +19,7 @@ const cube = document.getElementById('cube');
 
 if (cube) {
 	// set defaults
-	const frameRate = 24;
+	const frameRate = 18;
 	const translateZ = pageWidth > 900 ? 200 : 75;
 	let mouseX = pageWidth / -4;
 	let mouseY = pageHeight / -4;
