@@ -2,6 +2,7 @@
 
 :root {
 	--cr-accent: #0000ff;
+	--cr-red: #e8567c;
 	--cr-white: #ffffff;
 	--cr-black: #111111;
 	--cr-subtle: rgba(125, 125, 125, 0.2);
@@ -13,7 +14,7 @@
 	--t-b-1: 300 22px/1.25 "Helvetica Neue", Helvetica, sans-serif;
 	--t-b-2: 300 18px/1.25 "Helvetica Neue", Helvetica, sans-serif;
 
-	--t-l-1: 400 14px/1 monospace, sans-serif;
+	--t-l-1: 400 13px/1.2 monospace;
 
 	--w-1: 1420px;
 	--w-2: 1080px;
@@ -31,7 +32,7 @@
 		--t-b-1: 300 16px/1.25 "Helvetica Neue", Helvetica, sans-serif;
 		--t-b-2: 300 14px/1.25 "Helvetica Neue", Helvetica, sans-serif;
 
-		--t-l-1: 400 12px/1 monospace, sans-serif;
+		--t-l-1: 400 10px/1.2 monospace;
 	}
 	nav {
 		font: var(--t-b-2);
@@ -54,6 +55,9 @@ html {
 
 .cr-accent {
 	color: var(--cr-accent);
+}
+.cr-red {
+	color: var(--cr-red);
 }
 .cr-black {
 	color: var(--cr-black);
@@ -109,9 +113,9 @@ h6,
 }
 
 .t-l-1 {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
 	font: var(--t-l-1);
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
 
 
