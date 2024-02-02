@@ -47,6 +47,7 @@ html {
 
 /*** COLORS ***/
 
+.highlight,
 ::selection {
 	text-shadow: none;
 	background-color: var(--cr-accent);
