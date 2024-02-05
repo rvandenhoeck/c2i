@@ -43,10 +43,12 @@ html {
 	background-color: var(--cr-black);
 	color: var(--cr-white);
 	font: var(--t-b-2);
+	letter-spacing: .02em;
 }
 
 /*** COLORS ***/
 
+.highlight,
 ::selection {
 	text-shadow: none;
 	background-color: var(--cr-accent);
@@ -88,12 +90,13 @@ html {
 h1,
 .t-h-1 {
 	font: var(--t-h-1);
-	
+	letter-spacing: 0;
 }
 
 h2,
 .t-h-2 {
 	font: var(--t-h-2);
+	letter-spacing: 0;
 }
 
 h3,
@@ -102,14 +105,17 @@ h5,
 h6,
 .t-h-3 {
 	font: var(--t-h-3);
+	letter-spacing: 0;
 }
 
 .t-b-1 {
 	font: var(--t-b-1);
+	letter-spacing: .02em;
 }
 
 .t-b-2 {
 	font: var(--t-b-2);
+	letter-spacing: .02em;
 }
 
 .t-l-1 {
