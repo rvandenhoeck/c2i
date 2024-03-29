@@ -67,7 +67,7 @@ summary {
 	transition: opacity .2s;
 }
 
-.list-item:hover .list-item-content {
+.list-item.is-active .list-item-content {
 	opacity: 1;
 }
 
@@ -75,4 +75,30 @@ summary {
 	ul {
 		grid-template-columns: 1fr;
 	}
+}
+
+.filters {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.filter-item {
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 10px 15px;
+	transition: background-color .2s, color .2s;
+	cursor: pointer;
+}
+
+.filter-item:hover,
+.filter-item.is-active {
+	background-color: black;
+	color: white;
+}
+
+.is-hidden {
+	display: none;
 }
