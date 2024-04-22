@@ -50,7 +50,8 @@ function printOrder() {
 		const n_student = students[n_i];
 
 		// Daphne (1R: Ana, 2R: Rohan, N: Kim)
-		const line = `${student}: (1R: ${fr_student}, 2R: ${sr_student}, N: ${n_student})`;
+		// const line = `${student}: (1R: ${fr_student}, 2R: ${sr_student}, N: ${n_student})`;
+		const line = `${student}: (Responder: ${fr_student})`;
 		console.log(line);
 	}
 }
