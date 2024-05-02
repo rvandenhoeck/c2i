@@ -5,16 +5,16 @@ const renderItems = (collection) => {
 	// Step 1: Decide where we will be inserting HTML into the page
 	// We'll store `ul` where the items will be inserted in a variable called collectionList
 	const collectionList = document.getElementById('collection');
-	
+
 	// Step 2: Iterate through the json/payload we get from the fetch method
 	// forEach loops through each item/object in the collection/array
 	collection.forEach(item => {
-		
+
 		// Step 3: Decide how to create the HTML, pulling from the object as needed		
 		// Use “template string/literal" to create a bundnle of HTML all at once
-			// notice the tick marks `` wrapped around everything, with ${variable} used for dynamic content
-			const itemDetails =
-				`
+		// notice the tick marks `` wrapped around everything, with ${variable} used for dynamic content
+		const itemDetails =
+			`
 					<li id="${item.id}" class="list-item" data-country="${item.country}">
 						<img src="${item.posterImage}" class="list-item-image">
 						<div class="list-item-content">
@@ -24,9 +24,9 @@ const renderItems = (collection) => {
 						</div>
 					</li>
 				`;
-			
+
 		// Step 4: Insert our new HTML (stored in itemDetails) into the page (before the end the collectionList element )
-		collectionList.insertAdjacentHTML('beforeend', itemDetails); 
+		collectionList.insertAdjacentHTML('beforeend', itemDetails);
 
 		// You can build logic from your data, too
 		// if (!item.otherAttr) { // If this is `false`
@@ -62,7 +62,7 @@ const renderItems = (collection) => {
 			// const buttonCountry = item.dataset.country;
 			const buttonCountry = button.getAttribute("data-country"); // another way to get an attribute
 			const buttonState = button.classList.contains('is-active'); // true (active) or false (inactive)
-			
+
 			// if we are toggling off a button OR (that's what || means) the All button is clicked…
 			// show all elements
 			if (buttonState == false || buttonCountry == 'All') {
@@ -70,7 +70,7 @@ const renderItems = (collection) => {
 				hiddenListItems.forEach(item => {
 					item.classList.remove('is-hidden');
 				});
-			// otherwise, start filtering
+				// otherwise, start filtering
 			} else {
 				// go through each list item again, deciding if to show or hide it
 				listItems.forEach(item => {
@@ -94,4 +94,4 @@ fetch('assets/collection.json')
 	.then(collection => {
 		// And passes the data to the function, above!
 		renderItems(collection)
-})
+	})
