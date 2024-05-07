@@ -1,19 +1,9 @@
 const students = [
-	"Daphne",
+	// "Daphne",
 	"Ana",
-	"Rohan",
 	"Yeonjoo",
 	"Jaq",
-	"Cameron",
-	"Lily",
-	"Katie",
-	"Ishika",
-	"Kuhoo",
 	"Sofia",
-	"Samantha",
-	"Christine",
-	"Vanessa",
-	"Kim"
 ];
 
 function shuffle(array) {
